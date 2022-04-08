@@ -5,14 +5,11 @@
       GifsApp
     </h3>
     <hr class="text-white">
-    
-    
-
+  
     <div class="list-group list-reset">
-      <a *ngFor="let item of historial" href="#" class="list-group-item list-grout-item-action">
+      <a *ngFor="let item of historial" href="#" class="list-group-item list-grout-item-action" (click)="buscar( item )" >
         {{item | titlecase }}
       </a>
-    
     </div>
   </div>
   <!-- End Sidebar -->
